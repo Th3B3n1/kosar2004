@@ -47,6 +47,7 @@ for (int i = 0; i < matches.Count; i++)
 	}
 }
 Console.WriteLine("Volt döntetlen mérközés? " + (draw ? "Igen" : "Nem"));
+
 Console.WriteLine("----- 5.Feladat -----");
 string name = "";
 for (int i = 0; i < matches.Count; i++)
@@ -57,6 +58,7 @@ for (int i = 0; i < matches.Count; i++)
 	}
 }
 Console.WriteLine("barceloniai csapat neve: " + (name != "" ? name : "Nincs"));
+
 Console.WriteLine("----- 6.Feladat -----");
 List<Match> matchesOnSpecificDate = new List<Match>();
 for (int i = 0; i < matches.Count; i++)
@@ -70,6 +72,7 @@ for (int i = 0; i < matchesOnSpecificDate.Count; i++)
 {
 	Console.WriteLine(matchesOnSpecificDate[i].Home + "-" + matchesOnSpecificDate[i].Guest + " (" + matchesOnSpecificDate[i].HomePoints + ":" + matchesOnSpecificDate[i].GuestPoints + ")");
 }
+
 Console.WriteLine("----- 7.Feladat -----");
 Dictionary<string, int> stadiums = new Dictionary<string, int>();
 for (int i = 0; i < matches.Count; i++)
